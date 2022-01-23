@@ -690,7 +690,7 @@ img[alt]::after {
   height: 100vh;
   visibility: visible;
   opacity: 1;
-  pointer-events: all;
+  pointer-events: auto;
   position: fixed;
   left: 0;
   top: 0;
@@ -706,7 +706,7 @@ img[alt]::after {
 }
 
 .close-btn {
-  position: absolute;
+  position: sticky;
   right: var(--gap-8);
   top: var(--gap-8);
   border-radius: 50%;
@@ -715,12 +715,15 @@ img[alt]::after {
   fill: var(--color-white);
   background-color: var(--color-white);
   display: flex;
+  float: right;
 }
 
 .modal-window {
   position: absolute;
-  height: 581px;
+  height: 80vh;
   width: 528px;
+  max-height: 580px;
+  overflow-y: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
