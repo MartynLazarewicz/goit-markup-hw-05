@@ -712,7 +712,8 @@ img[alt]::after {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  background-color: white;
+  fill: var(--color-white);
+  background-color: var(--color-white);
   display: flex;
 }
 
