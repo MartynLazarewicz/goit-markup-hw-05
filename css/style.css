@@ -3,6 +3,7 @@
   --color-secondary: #757575;
   --color-accent: #2196f3;
   --color-bg-dark: #2f303a;
+  --color-bg-dark-opacity: rgba(47, 48, 58, 0.8);
   --color-bg-light: #f5f4fa;
   --color-socials: #afb1b8;
 
@@ -333,8 +334,7 @@ h2 {
   width: 100%;
   height: 70px;
   color: var(--color-white);
-  background-color: var(--color-bg-dark);
-  opacity: 0.8;
+  background-color: var(--color-bg-dark-opacity);
   font-size: var(--font-14);
   font-weight: var(--font-bold);
   line-height: var(--l-height-16);
@@ -721,8 +721,9 @@ img[alt]::after {
 .modal-window {
   position: absolute;
   height: 80vh;
-  width: 528px;
+  width: 90vw;
   max-height: 580px;
+  max-width: 528px;
   overflow-y: auto;
   top: 50%;
   left: 50%;
