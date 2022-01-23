@@ -65,7 +65,16 @@
       <section class="hero">
         <div class="container hero-content">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="hero-btn" type="button">Zamów usługe</button>
+          <button class="hero-btn" type="button" data-modal-open>Zamów usługe</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal-window">
+            <button class="close-btn" data-modal-close>
+              <svg width="30" height="30">
+                <use href="images/sprite.svg#icon-close" width="30" height="30"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="about pt">
@@ -120,12 +129,15 @@
           <ul class="what-we-do-content">
             <li class="what-we-do-content-item">
               <img src="images/white_keyboard.jpg" alt="White-keyboard" width="370" height="294" />
+              <span class="what-we-do-content-item-span">Aplikacje komputerowe</span>
             </li>
             <li class="what-we-do-content-item">
               <img src="images/iphone_laptop.jpg" alt="Iphone_laptop" width="370" height="294" />
+              <span class="what-we-do-content-item-span">Aplikacje mobilne</span>
             </li>
             <li class="what-we-do-content-item">
               <img src="images/hex_tablet.jpg" alt="hex_tablet" width="370" height="294" />
+              <span class="what-we-do-content-item-span">Rozwiązania graficzne</span>
             </li>
           </ul>
         </div>
@@ -378,5 +390,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
