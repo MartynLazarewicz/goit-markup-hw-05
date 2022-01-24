@@ -557,6 +557,7 @@ address {
 .portfolio-filtr-content-item--button {
   color: var(--color-primary);
   font-size: var(--font-16);
+  font-family: var(--font-primary);
   line-height: var(--l-height-26);
   font-weight: var(--font-normal);
   letter-spacing: var(--l-spacing-03);
