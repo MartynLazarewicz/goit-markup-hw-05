@@ -163,7 +163,7 @@ h2 {
   content: '';
   display: block;
   top: 45px;
-  left: 0;
+  right: 0;
   width: 0;
   height: 5px;
   background-color: #2196f3;
@@ -173,6 +173,7 @@ h2 {
 
 .nav-link:hover::after {
   width: 100%;
+  left: 0;
 }
 
 .active-link {
